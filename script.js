@@ -9,7 +9,7 @@ document.querySelector(".btn").addEventListener("click", function () {
   //Get Weather info from API
   async function getWeather(city) {
     const apiKey = "880f7eac8098a7054bd4368f35745d88";
-    const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
     const response = await fetch(apiUrl);
     const data = await response.json();
